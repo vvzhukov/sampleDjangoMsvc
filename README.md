@@ -4,10 +4,12 @@ Sample microservice (Python/Django)
 
 ## Installation & set up
 ```powershell
-pip3 install Django  
+pip3 install Django
+pip3 install djangorestframework
 python3 -m django startproject django_msvc  
 cd django_msvc  
-python3 manage.py startapp myapp  
+python3 manage.py startapp myapp
+python3 manage.py runserver
 ```
 
 ## Migrations
@@ -16,6 +18,7 @@ PS E:\tmp\django_msvc> python3 .\manage.py makemigrations
 PS E:\tmp\django_msvc> python3 .\manage.py migrate  
 ```
 
+## Config changes
 Add installed apps to settings.py
 ```python
 INSTALLED_APPS = [
